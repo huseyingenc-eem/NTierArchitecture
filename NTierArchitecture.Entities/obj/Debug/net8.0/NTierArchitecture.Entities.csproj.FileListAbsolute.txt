@@ -1,0 +1,11 @@
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.deps.json
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.dll
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.pdb
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.AssemblyInfoInputs.cache
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.AssemblyInfo.cs
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.csproj.CoreCompileInputs.cache
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.dll
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\refint\NTierArchitecture.Entities.dll
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.pdb
+C:\YazılımEgitimi\c#\huseyingenc\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\ref\NTierArchitecture.Entities.dll
