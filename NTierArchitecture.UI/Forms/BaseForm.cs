@@ -16,5 +16,31 @@ namespace NTierArchitecture.UI.Forms
         {
             InitializeComponent();
         }
+
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        //protected > sadece kendinden türetilen sınıflardan erişime izin verilir.
+        protected virtual void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void btnList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -2,13 +2,17 @@
 
 namespace NTierArchitecture.Entities.Models
 {
-    public class OrderDetail: Entity
+    public class OrderDetail : Entity
     {
         public int Quantity { get; set; }
         public double UnitPrice { get; set; }
         public Product? Product { get; set; }
-        public Guid ProductID { get; set; }
         public Order? Order { get; set; }
+        public Guid ProductID { get; set; }
         public Guid OrderID { get; set; }
+
+        public string ProductName { get; set; }
+
+        public double KdvliFiyat { get; set; }
     }
 }

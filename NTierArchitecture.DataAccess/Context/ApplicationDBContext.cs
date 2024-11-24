@@ -16,23 +16,24 @@ namespace NTierArchitecture.DataAccess.Context
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-        public DbSet<Category> Categorys { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=HUSEYIN;Initial Catalog=ETicaret;Integrated Security=True;TrustServerCertificate=True;");
-
+            optionsBuilder.UseSqlServer(@"Data Source=HUSEYIN;Initial Catalog=ETicaret1;Integrated Security=True;TrustServerCertificate=True;");
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //DB tablolarımız oluşturulurken onlara müdahale edebiliriz.
-            // OrderDetail tablosunun Id alanını iptal edeceğiz.
-            modelBuilder.Entity<OrderDetail>().Ignore(x=>x.ID);
+            //DB tablolarımız oluşturulurken onlara müdehale edebiliriz.
 
-            // bunun yerine Product ve OrderId alanlarınız Composite Key yapacağız. x=>x.ID burda bunu direk olarak kullanamıyorsun 2 parametre verilecekse new lenip  süslü parentez içersiinde verilir.
-            modelBuilder.Entity<OrderDetail>().HasKey(o=>new {
-                o.ProductID,
-                o.OrderID
+            //OrderDetail tablosunun ID alınını iptal edeceğiz:
+            modelBuilder.Entity<OrderDetail>().Ignore(x=>x.Id);
+
+            //Bunun yerine ProductID ve OrderID alanlarını Composite Key yapacağız:
+            modelBuilder.Entity<OrderDetail>().HasKey(o => new {
+            o.OrderID,
+            o.ProductID
             });
         }
     }

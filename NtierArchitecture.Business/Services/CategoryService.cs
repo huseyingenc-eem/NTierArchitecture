@@ -1,53 +1,76 @@
-﻿using FluentValidation.Results;
-using NtierArchitecture.Business.Abstractions;
-using NtierArchitecture.Business.Validators;
+﻿using FluentValidation;
+using FluentValidation.Results;
+using NTierArchitecture.Business.Abstractions;
+using NTierArchitecture.Business.Validators;
 using NTierArchitecture.DataAccess.Repositories;
+using NTierArchitecture.Entities.Abstractions;
 using NTierArchitecture.Entities.Models;
+using System.Linq.Expressions;
 using System.Text;
 
-namespace NtierArchitecture.Business.Services
+namespace NTierArchitecture.Business.Services
 {
     public class CategoryService : IManager<Category>
     {
-        private readonly CategoryRepository Id;
-
+        private readonly CategoryRepository _repository;
         public CategoryService(CategoryRepository catRepo)
         {
-            Id = catRepo;
+            _repository = catRepo;
         }
         public void Create(Category entity)
         {
-            //Install-Package FluentValidation
-            CategoryValidator cVal = new();
-            ValidationResult result=  cVal.Validate(entity);
-            //StringBuilder sb = new();
-            //result.Errors.ForEach(x=>sb.AppendLine(x.ToString()));
-            if (!result.IsValid)
-            {
-                
-                throw new Exception(string.Join("\n",result.Errors));
-                //throw new Exception(sb.ToString());
-            }
+            ValidationControl(entity);
+
+            if (IfEntityExists(c => c.CategoryName == entity.CategoryName))
+                throw new Exception("Bu kategori daha önce kayıt edilmiştir.");
+
+            _repository.Create(entity);
         }
 
         public void Delete(Guid Id)
         {
-            
+            var cat=_repository.GetByID(Id);
+            if (cat.IsActive)
+                throw new Exception("Aktif olan bir kategori silinemez");
+
+            _repository.Delete(cat.Id);
         }
 
         public IEnumerable<Category> GetAll()
         {
-            throw new Exception("aada");
+            return _repository.GetAll();
         }
 
-        public Category GetById(Guid Id)
+        public Category GetByID(Guid Id)
         {
-            throw  new Exception("aada");
+            return _repository.GetByID(Id);
+        }
+
+
+        public bool IfEntityExists(Expression<Func<Category, bool>> filter)
+        {
+            return _repository.IfEntityExists(filter);
         }
 
         public void Update(Category entity)
         {
-            throw new Exception("aada");
+            ValidationControl(entity);
+
+            if (entity!=null)
+                _repository.Update(entity);
+        }
+
+        public void ValidationControl(Category entity)
+        {
+            CategoryValidator pVal = new CategoryValidator();
+            ValidationResult result = pVal.Validate(entity);
+
+            if (!result.IsValid)
+            {
+                StringBuilder sb = new StringBuilder();
+                result.Errors.ForEach(r => sb.AppendLine(r.ErrorMessage));
+                throw new Exception(sb.ToString());
+            }
         }
     }
 }

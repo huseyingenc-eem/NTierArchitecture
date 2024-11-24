@@ -1,3 +1,5 @@
+using NTierArchitecture.UI.Forms;
+
 namespace NTierArchitecture.UI
 {
     public partial class Form1 : Form
@@ -9,7 +11,8 @@ namespace NTierArchitecture.UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
+           
         }
     }
 }

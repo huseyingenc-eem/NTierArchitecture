@@ -24,7 +24,7 @@ namespace NTierArchitecture.DataAccess.Migrations
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Category", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -40,14 +40,14 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
-                    b.ToTable("Categorys");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Customer", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -69,14 +69,14 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Employee", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -101,14 +101,14 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<string>("SurName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Order", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -136,7 +136,7 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<string>("ShipCountry")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.HasIndex("CustomerID");
 
@@ -147,10 +147,10 @@ namespace NTierArchitecture.DataAccess.Migrations
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.OrderDetail", b =>
                 {
-                    b.Property<Guid>("ProductID")
+                    b.Property<Guid>("OrderID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("OrderID")
+                    b.Property<Guid>("ProductID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
@@ -159,22 +159,29 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<double>("KdvliFiyat")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<double>("UnitPrice")
                         .HasColumnType("float");
 
-                    b.HasKey("ProductID", "OrderID");
+                    b.HasKey("OrderID", "ProductID");
 
-                    b.HasIndex("OrderID");
+                    b.HasIndex("ProductID");
 
                     b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Product", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -196,13 +203,13 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<Guid>("SupplierID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("UnitIsStock")
-                        .HasColumnType("int");
-
                     b.Property<double>("UnitPrice")
                         .HasColumnType("float");
 
-                    b.HasKey("ID");
+                    b.Property<int>("UnitsInStock")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("CategoryID");
 
@@ -213,7 +220,7 @@ namespace NTierArchitecture.DataAccess.Migrations
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Supplier", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -238,7 +245,7 @@ namespace NTierArchitecture.DataAccess.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Suppliers");
                 });
@@ -284,7 +291,7 @@ namespace NTierArchitecture.DataAccess.Migrations
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Product", b =>
                 {
                     b.HasOne("NTierArchitecture.Entities.Models.Category", "Category")
-                        .WithMany("MyProperty")
+                        .WithMany("Products")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -302,7 +309,7 @@ namespace NTierArchitecture.DataAccess.Migrations
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Category", b =>
                 {
-                    b.Navigation("MyProperty");
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("NTierArchitecture.Entities.Models.Customer", b =>

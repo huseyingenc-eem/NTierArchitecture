@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iya9OlgTMIA=",
+  "dgSpecHash": "d/oI9ov07n8=",
   "success": true,
-  "projectFilePath": "C:\\YazılımEgitimi\\c#\\huseyingenc\\NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI.csproj",
+  "projectFilePath": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\NTierArchitecture.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\husey\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\husey\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
-    "C:\\Users\\husey\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\husey\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\husey\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\husey\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\husey\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

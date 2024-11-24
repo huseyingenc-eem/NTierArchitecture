@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnAdd = new Button();
-            btnDelete = new Button();
-            btnUpdate = new Button();
             btnList = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btnAdd = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,66 +42,71 @@
             groupBox1.Controls.Add(btnUpdate);
             groupBox1.Controls.Add(btnDelete);
             groupBox1.Controls.Add(btnAdd);
-            groupBox1.Location = new Point(8, 8);
-            groupBox1.Margin = new Padding(2, 2, 2, 2);
+            groupBox1.Location = new Point(11, 373);
+            groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2, 2, 2, 2);
-            groupBox1.Size = new Size(546, 105);
+            groupBox1.Padding = new Padding(2);
+            groupBox1.Size = new Size(682, 150);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "İşlem Menüsü";
             // 
-            // btnAdd
+            // btnList
             // 
-            btnAdd.Location = new Point(4, 29);
-            btnAdd.Margin = new Padding(2, 2, 2, 2);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(108, 34);
-            btnAdd.TabIndex = 0;
-            btnAdd.Text = "Ekle";
-            btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            btnDelete.Location = new Point(117, 29);
-            btnDelete.Margin = new Padding(2, 2, 2, 2);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(108, 34);
-            btnDelete.TabIndex = 1;
-            btnDelete.Text = "Sil";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnList.Location = new Point(514, 50);
+            btnList.Margin = new Padding(2);
+            btnList.Name = "btnList";
+            btnList.Size = new Size(144, 81);
+            btnList.TabIndex = 0;
+            btnList.Text = "LİSTELE";
+            btnList.UseVisualStyleBackColor = true;
+            btnList.Click += btnList_Click;
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(228, 29);
-            btnUpdate.Margin = new Padding(2, 2, 2, 2);
+            btnUpdate.Location = new Point(324, 50);
+            btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(108, 34);
-            btnUpdate.TabIndex = 2;
-            btnUpdate.Text = "Güncelle";
+            btnUpdate.Size = new Size(186, 81);
+            btnUpdate.TabIndex = 0;
+            btnUpdate.Text = "GÜNCELLE";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
-            // btnList
+            // btnDelete
             // 
-            btnList.Location = new Point(340, 29);
-            btnList.Margin = new Padding(2, 2, 2, 2);
-            btnList.Name = "btnList";
-            btnList.Size = new Size(108, 34);
-            btnList.TabIndex = 3;
-            btnList.Text = "Listele";
-            btnList.UseVisualStyleBackColor = true;
+            btnDelete.Location = new Point(174, 50);
+            btnDelete.Margin = new Padding(2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(144, 81);
+            btnDelete.TabIndex = 0;
+            btnDelete.Text = "SİL";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(24, 50);
+            btnAdd.Margin = new Padding(2);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(144, 81);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "EKLE";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // BaseForm
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(576, 378);
+            BackColor = Color.FromArgb(192, 255, 255);
+            ClientSize = new Size(717, 534);
             Controls.Add(groupBox1);
-            Font = new Font("Segoe UI", 14F);
-            Margin = new Padding(5, 5, 5, 5);
+            Font = new Font("Segoe UI", 20F);
+            Margin = new Padding(6, 7, 6, 7);
             Name = "BaseForm";
             Text = "BaseForm";
+            Load += BaseForm_Load;
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }

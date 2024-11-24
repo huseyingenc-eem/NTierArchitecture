@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,13 +14,8 @@ namespace NTierArchitecture.DataAccess.Abstractions
         void Update(T entity);
         void Delete(Guid Id);
         IEnumerable<T> GetAll();
-        T GetById(Guid Id);
+        T GetByID(Guid Id);
 
-
-
-        //ICollection<T> GetAll2();
-        //IQueryable<T> GetAll3(); // sadece sorgular oluşturur. tavsiye edilmez.
-        //List<T> GetAll(); // bütün list ekliyor diğer değişkenlere gerek kalmaz.
-
+        bool IfEntityExists(Expression<Func<T, bool>> filter);
     }
 }

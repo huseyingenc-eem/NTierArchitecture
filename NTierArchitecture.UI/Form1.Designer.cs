@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(479, 475);
+            ClientSize = new Size(609, 415);
             Font = new Font("Segoe UI", 20F);
             Margin = new Padding(6, 7, 6, 7);
             Name = "Form1";

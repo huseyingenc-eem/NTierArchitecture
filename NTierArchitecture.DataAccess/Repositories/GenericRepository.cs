@@ -5,6 +5,7 @@ using NTierArchitecture.Entities.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,7 +15,8 @@ namespace NTierArchitecture.DataAccess.Repositories
     {
         private readonly ApplicationDBContext _dbContext;
         private readonly DbSet<T> _dbSet;
-        public GenericRepository(ApplicationDBContext context) 
+
+        public GenericRepository(ApplicationDBContext context)
         {
             _dbContext = context;
             _dbSet = _dbContext.Set<T>();
@@ -27,7 +29,7 @@ namespace NTierArchitecture.DataAccess.Repositories
 
         public void Delete(Guid Id)
         {
-            _dbSet.Remove(GetById(Id));
+            _dbSet.Remove(GetByID(Id));
             _dbContext.SaveChanges();
         }
 
@@ -36,16 +38,23 @@ namespace NTierArchitecture.DataAccess.Repositories
             return _dbSet.ToList();
         }
 
-        public T GetById(Guid Id)
+        public T GetByID(Guid Id)
         {
-            //var data=_dbSet.FirstOrDefault(x=>x.ID==Id);
+            return _dbSet.FirstOrDefault(x => x.Id == Id) ?? throw new Exception("Bulunamadı");
+
             //if (data == null)
             //{
-            //    throw new Exception("Bulunmadı.");
+            //    throw new Exception("Bulunamadı.");
             //}
             //return data;
-            // !bir ifadenin kesinlikle null gelmeyeceğini bildirmek için kullanılır.
-            return (_dbSet.FirstOrDefault(x => x.ID == Id))! ?? throw new InvalidOperationException("Id bulunamadı.") ;
+
+            //! bir ifadenin kesinlikle null gelmeyeceğini bildirmek için kullanılır.
+            //return (_dbSet.FirstOrDefault(x => x.Id == Id))!;
+        }
+
+        public bool IfEntityExists(Expression<Func<T, bool>> filter)
+        {
+            return _dbSet.Any(filter);
         }
 
         public void Update(T entity)

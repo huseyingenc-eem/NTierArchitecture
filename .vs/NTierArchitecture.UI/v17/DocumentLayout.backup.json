@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|c:\\users\\husey\\downloads\\051124-ntierarchitecture\\ntierarchitecture.ui\\ntierarchitecture.ui\\forms\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|solutionrelative:ntierarchitecture.ui\\forms\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|c:\\users\\husey\\downloads\\051124-ntierarchitecture\\ntierarchitecture.ui\\ntierarchitecture.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|solutionrelative:ntierarchitecture.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\ntierarchitecture.ui\\forms\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|solutionrelative:ntierarchitecture.ui\\forms\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA47057-6F91-434B-8E6F-C4B13BDC1DBF}|NTierArchitecture.Entities\\NTierArchitecture.Entities.csproj|c:\\users\\husey\\downloads\\051124-ntierarchitecture\\ntierarchitecture.ui\\ntierarchitecture.entities\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA47057-6F91-434B-8E6F-C4B13BDC1DBF}|NTierArchitecture.Entities\\NTierArchitecture.Entities.csproj|solutionrelative:ntierarchitecture.entities\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|c:\\users\\husey\\downloads\\051124-ntierarchitecture\\ntierarchitecture.ui\\ntierarchitecture.ui\\todolist.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CB54A0C0-C730-4EE1-B30C-85D553BFCBF0}|NTierArchitecture.UI\\NTierArchitecture.UI.csproj|solutionrelative:ntierarchitecture.ui\\todolist.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 258,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 313,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.Entities\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "NTierArchitecture.Entities\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.Entities\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "NTierArchitecture.Entities\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T14:29:16.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderForm.cs",
+              "DocumentMoniker": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "RelativeDocumentMoniker": "NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "ToolTip": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "RelativeToolTip": "NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAswLQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T12:41:07.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "RelativeDocumentMoniker": "NTierArchitecture.UI\\Forms\\OrderForm.cs",
+              "ToolTip": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Forms\\OrderForm.cs [Design]",
+              "RelativeToolTip": "NTierArchitecture.UI\\Forms\\OrderForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:13:34.766Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 313,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e29d4270-11e6-4f82-80b6-870bb57d56a3",
+        "Display": 0,
+        "X": 1304,
+        "Y": 691,
+        "Width": 635,
+        "Height": 706,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Program.cs",
+              "RelativeDocumentMoniker": "NTierArchitecture.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\Program.cs",
+              "RelativeToolTip": "NTierArchitecture.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:22:37.572Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "8f8b29a9-3fc3-4c17-b567-ca323621275b",
+        "Display": 0,
+        "X": 1929,
+        "Y": 691,
+        "Width": 636,
+        "Height": 706,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "todoList.txt",
+              "DocumentMoniker": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\todoList.txt",
+              "RelativeDocumentMoniker": "NTierArchitecture.UI\\todoList.txt",
+              "ToolTip": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.UI\\todoList.txt",
+              "RelativeToolTip": "NTierArchitecture.UI\\todoList.txt",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-20T07:49:43.802Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
