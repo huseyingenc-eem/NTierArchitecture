@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CgZeU/oLRKU=",
+  "dgSpecHash": "Ie7UMVjZbtE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\husey\\Downloads\\051124-NTierArchitecture\\NTierArchitecture.UI\\NTierArchitecture.Business\\NTierArchitecture.Business.csproj",
+  "projectFilePath": "C:\\YazılımEgitimi\\c#\\huseyingenc\\NTierArchitecture\\NTierArchitecture.Business\\NTierArchitecture.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\husey\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\husey\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
