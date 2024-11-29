@@ -181,7 +181,7 @@ namespace NTierArchitecture.UI.Forms
                                 KdvliFiyat = od.Quantity * od.UnitPrice * 1.2
                             })
                             .ToList();
-
+                
                 dgwOrderDetailList.DataSource = filteredOrderDetails;
             }
             catch (Exception ex)
